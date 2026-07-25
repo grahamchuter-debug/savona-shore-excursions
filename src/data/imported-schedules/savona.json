@@ -1,0 +1,66 @@
+[
+  {
+    "date": "2026-09-12",
+    "ship": "MSC Seaside",
+    "cruiseLine": "MSC Cruises",
+    "arrival": "07:00",
+    "departure": "18:00",
+    "berth": "Terminal"
+  },
+  {
+    "date": "2026-09-12",
+    "ship": "Costa Smeralda",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:00",
+    "departure": "19:00",
+    "berth": "Terminal"
+  },
+  {
+    "date": "2026-09-19",
+    "ship": "MSC Grandiosa",
+    "cruiseLine": "MSC Cruises",
+    "arrival": "07:30",
+    "departure": "18:30",
+    "berth": "Terminal"
+  },
+  {
+    "date": "2026-09-19",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:00",
+    "departure": "18:00",
+    "berth": "Terminal"
+  },
+  {
+    "date": "2026-10-03",
+    "ship": "MSC Divina",
+    "cruiseLine": "MSC Cruises",
+    "arrival": "07:00",
+    "departure": "17:00",
+    "berth": "Terminal"
+  },
+  {
+    "date": "2026-10-03",
+    "ship": "Explora II",
+    "cruiseLine": "Explora Journeys",
+    "arrival": "08:00",
+    "departure": "18:00",
+    "berth": "Terminal"
+  },
+  {
+    "date": "2026-10-17",
+    "ship": "Costa Deliziosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "07:00",
+    "departure": "18:00",
+    "berth": "Terminal"
+  },
+  {
+    "date": "2026-11-07",
+    "ship": "MSC Magnifica",
+    "cruiseLine": "MSC Cruises",
+    "arrival": "08:00",
+    "departure": "17:30",
+    "berth": "Terminal"
+  }
+]

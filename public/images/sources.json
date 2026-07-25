@@ -1,0 +1,26 @@
+{
+  "generated": "2026-07-10T00:00:00.000Z",
+  "site": "malagashoreexcursions.com",
+  "files": [
+    "hero-home.jpg",
+    "og-default.jpg",
+    "cruise-port.jpg",
+    "alhambra.jpg",
+    "granada.jpg",
+    "ronda.jpg",
+    "caminito.jpg",
+    "mijas.jpg",
+    "historic.jpg",
+    "alcazaba.jpg",
+    "food.jpg",
+    "wine.jpg",
+    "coast.jpg",
+    "white-villages.jpg",
+    "compare.jpg",
+    "family.jpg",
+    "walking.jpg",
+    "photography.jpg",
+    "private.jpg"
+  ],
+  "note": "Master images sourced from Wikimedia Commons (CC-licensed). See scripts/download-malaga-images.mjs."
+}

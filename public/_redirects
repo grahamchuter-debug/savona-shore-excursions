@@ -1,0 +1,4 @@
+# Canonical host redirect: www -> non-www (301). Configure after DNS is live.
+https://www.savonashoreexcursions.com/*  https://savonashoreexcursions.com/:splat  301!
+http://www.savonashoreexcursions.com/*   https://savonashoreexcursions.com/:splat  301!
+http://savonashoreexcursions.com/*       https://savonashoreexcursions.com/:splat  301!
