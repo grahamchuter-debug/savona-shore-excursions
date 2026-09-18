@@ -92,7 +92,7 @@ export const privacyContent: LegalPageContent = {
       title: "Customer rights",
       paragraphs: [
         "Depending on applicable law, you may have rights to access, correct or delete personal information we hold about you, or to ask us about how it is used.",
-        `To make a privacy request, contact ${businessIdentity.customerServiceEmail}.`,
+        `To make a privacy request, contact ${businessIdentity.privacyEmail}.`,
         BUSINESS_DECISION_REQUIRED, // formal rights list / supervisory authority
       ],
     },
@@ -100,7 +100,7 @@ export const privacyContent: LegalPageContent = {
       id: "contact-details",
       title: "Contact details",
       paragraphs: [
-        `Privacy enquiries: ${businessIdentity.customerServiceEmail}`,
+        `Privacy enquiries: ${businessIdentity.privacyEmail}`,
         businessIdentity.companyDisclosure,
       ],
     },

@@ -1,3 +1,6 @@
+import type { WhyWeChoseThisExcursion } from "./why-we-chose-types";
+import type { DestinationCurrencyCode } from "@/lib/commerce/currency";
+
 export interface FAQ {
   question: string;
   answer: string;
@@ -48,12 +51,22 @@ export interface ExcursionPage {
   faqs: FAQ[];
   relatedExcursionSlugs: string[];
   featured?: boolean;
+  /**
+   * Customer-facing major-unit price (no FX). Prefer with `priceCurrency`.
+   * @deprecated Use priceAmount + priceCurrency for multi-currency destinations.
+   */
   priceEur?: number;
+  /** Authoritative major-unit retail price for display + booking alignment */
+  priceAmount?: number;
+  /** ISO currency for this product’s selling market */
+  priceCurrency?: DestinationCurrencyCode;
   bookable?: boolean;
   bookingPath?: string;
   returnGuarantee?: string;
   walkingLevel?: string;
   cruiseSuitability?: string;
+  /** Concierge editorial — reusable World 2.0 section */
+  whyWeChose?: WhyWeChoseThisExcursion;
   /** Optional supplier — keep flexible for SEG, affiliates and future exclusives */
   supplier?: ExcursionSupplier;
 }

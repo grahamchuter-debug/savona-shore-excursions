@@ -1,66 +1,959 @@
 [
   {
-    "date": "2026-09-12",
-    "ship": "MSC Seaside",
-    "cruiseLine": "MSC Cruises",
-    "arrival": "07:00",
-    "departure": "18:00",
-    "berth": "Terminal"
-  },
-  {
-    "date": "2026-09-12",
+    "date": "2026-10-03",
     "ship": "Costa Smeralda",
     "cruiseLine": "Costa Cruises",
-    "arrival": "08:00",
-    "departure": "19:00",
-    "berth": "Terminal"
+    "arrival": "08:30",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "9h",
+    "notes": "port time not found in itinerary"
   },
   {
-    "date": "2026-09-19",
-    "ship": "MSC Grandiosa",
-    "cruiseLine": "MSC Cruises",
-    "arrival": "07:30",
-    "departure": "18:30",
-    "berth": "Terminal"
-  },
-  {
-    "date": "2026-09-19",
-    "ship": "Costa Toscana",
+    "date": "2026-10-04",
+    "ship": "Costa Fascinosa",
     "cruiseLine": "Costa Cruises",
     "arrival": "08:00",
     "departure": "18:00",
-    "berth": "Terminal"
+    "callType": "Port of call",
+    "timeInPort": "10h"
   },
   {
-    "date": "2026-10-03",
-    "ship": "MSC Divina",
-    "cruiseLine": "MSC Cruises",
-    "arrival": "07:00",
-    "departure": "17:00",
-    "berth": "Terminal"
+    "date": "2026-10-04",
+    "ship": "Costa Pacifica",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "16:30",
+    "callType": "Port of call",
+    "timeInPort": "8h"
   },
   {
-    "date": "2026-10-03",
-    "ship": "Explora II",
-    "cruiseLine": "Explora Journeys",
+    "date": "2026-10-11",
+    "ship": "Costa Pacifica",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "16:30",
+    "callType": "Port of call",
+    "timeInPort": "8h"
+  },
+  {
+    "date": "2026-10-12",
+    "ship": "Balmoral",
+    "cruiseLine": "Fred Olsen Cruise Lines",
+    "arrival": "",
+    "departure": "",
+    "callType": "Port of call"
+  },
+  {
+    "date": "2026-10-12",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:00",
+    "departure": "16:30",
+    "callType": "Port of call",
+    "timeInPort": "8h 30m"
+  },
+  {
+    "date": "2026-10-15",
+    "ship": "Artania",
+    "cruiseLine": "Phoenix Reisen",
+    "arrival": "09:00",
+    "departure": "",
+    "callType": "Port of call",
+    "notes": "arrival only"
+  },
+  {
+    "date": "2026-10-15",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
     "arrival": "08:00",
     "departure": "18:00",
-    "berth": "Terminal"
+    "callType": "Port of call",
+    "timeInPort": "10h"
   },
   {
     "date": "2026-10-17",
-    "ship": "Costa Deliziosa",
+    "ship": "Costa Smeralda",
     "cruiseLine": "Costa Cruises",
-    "arrival": "07:00",
+    "arrival": "08:30",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "9h",
+    "notes": "port time not found in itinerary"
+  },
+  {
+    "date": "2026-10-18",
+    "ship": "Costa Diadema",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "09:00",
+    "departure": "16:30",
+    "callType": "Port of call",
+    "timeInPort": "7h 30m"
+  },
+  {
+    "date": "2026-10-18",
+    "ship": "Costa Pacifica",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "16:30",
+    "callType": "Port of call",
+    "timeInPort": "8h"
+  },
+  {
+    "date": "2026-10-19",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:00",
+    "departure": "16:30",
+    "callType": "Port of call",
+    "timeInPort": "8h 30m"
+  },
+  {
+    "date": "2026-10-22",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:00",
+    "departure": "16:30",
+    "callType": "Port of call",
+    "timeInPort": "8h 30m"
+  },
+  {
+    "date": "2026-10-24",
+    "ship": "Costa Smeralda",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "9h"
+  },
+  {
+    "date": "2026-10-25",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:00",
     "departure": "18:00",
-    "berth": "Terminal"
+    "callType": "Port of call",
+    "timeInPort": "10h"
+  },
+  {
+    "date": "2026-10-25",
+    "ship": "Costa Pacifica",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "16:30",
+    "callType": "Port of call",
+    "timeInPort": "8h"
+  },
+  {
+    "date": "2026-10-31",
+    "ship": "Costa Smeralda",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "9h",
+    "notes": "port time not found in itinerary"
+  },
+  {
+    "date": "2026-11-01",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:00",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "10h"
+  },
+  {
+    "date": "2026-11-01",
+    "ship": "Costa Pacifica",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "16:30",
+    "callType": "Port of call",
+    "timeInPort": "8h"
+  },
+  {
+    "date": "2026-11-02",
+    "ship": "Costa Diadema",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:00",
+    "departure": "17:00",
+    "callType": "Port of call",
+    "timeInPort": "9h",
+    "notes": "port time not found in itinerary"
+  },
+  {
+    "date": "2026-11-04",
+    "ship": "Oceania Allura",
+    "cruiseLine": "Oceania Cruises",
+    "arrival": "07:00",
+    "departure": "22:00",
+    "callType": "Port of call",
+    "timeInPort": "15h"
+  },
+  {
+    "date": "2026-11-05",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:00",
+    "departure": "16:30",
+    "callType": "Port of call",
+    "timeInPort": "8h 30m",
+    "notes": "port time not found in itinerary"
   },
   {
     "date": "2026-11-07",
-    "ship": "MSC Magnifica",
-    "cruiseLine": "MSC Cruises",
-    "arrival": "08:00",
+    "ship": "Costa Smeralda",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
     "departure": "17:30",
-    "berth": "Terminal"
+    "callType": "Port of call",
+    "timeInPort": "9h",
+    "notes": "port time not found in itinerary"
+  },
+  {
+    "date": "2026-11-08",
+    "ship": "Costa Pacifica",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "16:30",
+    "callType": "Port of call",
+    "timeInPort": "8h"
+  },
+  {
+    "date": "2026-11-12",
+    "ship": "Costa Smeralda",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "9h",
+    "notes": "arrival only"
+  },
+  {
+    "date": "2026-11-15",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:00",
+    "departure": "16:30",
+    "callType": "Port of call",
+    "timeInPort": "8h 30m"
+  },
+  {
+    "date": "2026-11-15",
+    "ship": "Costa Pacifica",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "16:30",
+    "callType": "Port of call",
+    "timeInPort": "8h",
+    "notes": "port time not found in itinerary"
+  },
+  {
+    "date": "2026-11-22",
+    "ship": "Costa Pacifica",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:00",
+    "departure": "17:00",
+    "callType": "Port of call",
+    "timeInPort": "9h"
+  },
+  {
+    "date": "2026-11-25",
+    "ship": "Costa Deliziosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "09:00",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h",
+    "notes": "port time not found in itinerary"
+  },
+  {
+    "date": "2026-11-25",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:00",
+    "departure": "16:30",
+    "callType": "Port of call",
+    "timeInPort": "8h 30m"
+  },
+  {
+    "date": "2026-11-27",
+    "ship": "Costa Pacifica",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "",
+    "departure": "",
+    "callType": "Port of call",
+    "notes": "port time not found in itinerary"
+  },
+  {
+    "date": "2026-11-28",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "9h",
+    "notes": "port time not found in itinerary"
+  },
+  {
+    "date": "2027-02-02",
+    "ship": "Costa Pacifica",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "07:00",
+    "departure": "16:00",
+    "callType": "Port of call",
+    "timeInPort": "9h"
+  },
+  {
+    "date": "2027-02-06",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "9h",
+    "notes": "port time not found in itinerary"
+  },
+  {
+    "date": "2027-02-13",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "9h"
+  },
+  {
+    "date": "2027-02-21",
+    "ship": "Costa Pacifica",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "07:00",
+    "departure": "16:00",
+    "callType": "Port of call",
+    "timeInPort": "9h"
+  },
+  {
+    "date": "2027-02-27",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "9h",
+    "notes": "port time not found in itinerary"
+  },
+  {
+    "date": "2027-02-28",
+    "ship": "Costa Pacifica",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "07:00",
+    "departure": "16:00",
+    "callType": "Port of call",
+    "timeInPort": "9h",
+    "notes": "port time not found in itinerary"
+  },
+  {
+    "date": "2027-03-06",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "9h",
+    "notes": "port time not found in itinerary"
+  },
+  {
+    "date": "2027-03-07",
+    "ship": "Costa Pacifica",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "07:00",
+    "departure": "16:00",
+    "callType": "Port of call",
+    "timeInPort": "9h"
+  },
+  {
+    "date": "2027-03-13",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "9h"
+  },
+  {
+    "date": "2027-03-21",
+    "ship": "Costa Favolosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:00",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "10h",
+    "notes": "arrival only"
+  },
+  {
+    "date": "2027-03-21",
+    "ship": "Costa Pacifica",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "07:00",
+    "departure": "16:00",
+    "callType": "Port of call",
+    "timeInPort": "9h"
+  },
+  {
+    "date": "2027-03-27",
+    "ship": "Costa Favolosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "09:00",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h"
+  },
+  {
+    "date": "2027-03-27",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "9h"
+  },
+  {
+    "date": "2027-05-01",
+    "ship": "Costa Favolosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:00",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "10h"
+  },
+  {
+    "date": "2027-05-01",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h 30m",
+    "notes": "port time not found in itinerary"
+  },
+  {
+    "date": "2027-05-02",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h 30m"
+  },
+  {
+    "date": "2027-05-04",
+    "ship": "Costa Serena",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:00",
+    "departure": "16:30",
+    "callType": "Port of call",
+    "timeInPort": "8h 30m"
+  },
+  {
+    "date": "2027-05-15",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h 30m"
+  },
+  {
+    "date": "2027-05-16",
+    "ship": "Costa Serena",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:00",
+    "departure": "16:30",
+    "callType": "Port of call",
+    "timeInPort": "8h 30m"
+  },
+  {
+    "date": "2027-05-18",
+    "ship": "Costa Favolosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:00",
+    "departure": "16:30",
+    "callType": "Port of call",
+    "timeInPort": "8h 30m"
+  },
+  {
+    "date": "2027-05-22",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h 30m"
+  },
+  {
+    "date": "2027-05-23",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h 30m"
+  },
+  {
+    "date": "2027-05-29",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h 30m",
+    "notes": "port time not found in itinerary"
+  },
+  {
+    "date": "2027-05-30",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "9h"
+  },
+  {
+    "date": "2027-05-30",
+    "ship": "Costa Serena",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:00",
+    "departure": "16:30",
+    "callType": "Port of call",
+    "timeInPort": "8h 30m",
+    "notes": "port time not found in itinerary"
+  },
+  {
+    "date": "2027-06-05",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h 30m"
+  },
+  {
+    "date": "2027-06-06",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "09:00",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "8h 30m"
+  },
+  {
+    "date": "2027-06-12",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h 30m"
+  },
+  {
+    "date": "2027-06-13",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "09:00",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "8h 30m"
+  },
+  {
+    "date": "2027-07-03",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h 30m",
+    "notes": "port time not found in itinerary"
+  },
+  {
+    "date": "2027-07-04",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "09:00",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "8h 30m"
+  },
+  {
+    "date": "2027-07-10",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h 30m",
+    "notes": "arrival only"
+  },
+  {
+    "date": "2027-07-11",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "09:00",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "8h 30m"
+  },
+  {
+    "date": "2027-07-17",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h 30m"
+  },
+  {
+    "date": "2027-07-18",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "09:00",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "8h 30m"
+  },
+  {
+    "date": "2027-07-24",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h 30m"
+  },
+  {
+    "date": "2027-07-25",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "09:00",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "8h 30m"
+  },
+  {
+    "date": "2027-07-27",
+    "ship": "Carnival Sunshine",
+    "cruiseLine": "Carnival Cruises",
+    "arrival": "08:00",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "10h"
+  },
+  {
+    "date": "2027-07-30",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "09:00",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "8h 30m",
+    "notes": "departure only"
+  },
+  {
+    "date": "2027-07-31",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h 30m"
+  },
+  {
+    "date": "2027-08-07",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h 30m"
+  },
+  {
+    "date": "2027-08-08",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "09:00",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "8h 30m"
+  },
+  {
+    "date": "2027-08-14",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h 30m"
+  },
+  {
+    "date": "2027-08-15",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "09:00",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "8h 30m"
+  },
+  {
+    "date": "2027-08-21",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h 30m",
+    "notes": "port time not found in itinerary"
+  },
+  {
+    "date": "2027-08-22",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "09:00",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "8h 30m"
+  },
+  {
+    "date": "2027-08-28",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h 30m"
+  },
+  {
+    "date": "2027-08-29",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "09:00",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "8h 30m"
+  },
+  {
+    "date": "2027-10-01",
+    "ship": "Costa Favolosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:00",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "10h",
+    "notes": "port time not found in itinerary"
+  },
+  {
+    "date": "2027-10-02",
+    "ship": "Costa Diadema",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "09:00",
+    "departure": "16:30",
+    "callType": "Port of call",
+    "timeInPort": "7h 30m"
+  },
+  {
+    "date": "2027-10-02",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h 30m",
+    "notes": "port time not found in itinerary"
+  },
+  {
+    "date": "2027-10-03",
+    "ship": "Costa Serena",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "07:30",
+    "departure": "17:30",
+    "callType": "Port of call",
+    "timeInPort": "10h"
+  },
+  {
+    "date": "2027-10-09",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h 30m"
+  },
+  {
+    "date": "2027-10-10",
+    "ship": "Costa Serena",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:00",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "10h"
+  },
+  {
+    "date": "2027-10-12",
+    "ship": "Costa Diadema",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "09:00",
+    "departure": "16:30",
+    "callType": "Port of call",
+    "timeInPort": "7h 30m"
+  },
+  {
+    "date": "2027-10-15",
+    "ship": "Costa Favolosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "09:00",
+    "departure": "17:00",
+    "callType": "Port of call",
+    "timeInPort": "8h",
+    "notes": "port time not found in itinerary"
+  },
+  {
+    "date": "2027-10-16",
+    "ship": "Amera",
+    "cruiseLine": "Phoenix Reisen",
+    "arrival": "09:00",
+    "departure": "",
+    "callType": "Port of call",
+    "notes": "arrival only"
+  },
+  {
+    "date": "2027-10-16",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h 30m"
+  },
+  {
+    "date": "2027-10-17",
+    "ship": "Costa Serena",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:00",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "10h"
+  },
+  {
+    "date": "2027-10-22",
+    "ship": "Costa Diadema",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "09:00",
+    "departure": "16:30",
+    "callType": "Port of call",
+    "timeInPort": "7h 30m",
+    "notes": "port time not found in itinerary"
+  },
+  {
+    "date": "2027-10-23",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h 30m",
+    "notes": "port time not found in itinerary"
+  },
+  {
+    "date": "2027-10-24",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h 30m",
+    "notes": "arrival only"
+  },
+  {
+    "date": "2027-10-24",
+    "ship": "Costa Serena",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:00",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "10h"
+  },
+  {
+    "date": "2027-10-28",
+    "ship": "Costa Serena",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:00",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "10h"
+  },
+  {
+    "date": "2027-10-28",
+    "ship": "Seven Seas Splendor",
+    "cruiseLine": "Regent Seven Seas Cruises",
+    "arrival": "07:00",
+    "departure": "19:00",
+    "callType": "Port of call",
+    "timeInPort": "12h"
+  },
+  {
+    "date": "2027-10-29",
+    "ship": "Costa Favolosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "09:00",
+    "departure": "16:30",
+    "callType": "Port of call",
+    "timeInPort": "7h 30m",
+    "notes": "port time not found in itinerary"
+  },
+  {
+    "date": "2027-10-30",
+    "ship": "Costa Toscana",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "18:00",
+    "callType": "Port of call",
+    "timeInPort": "9h 30m"
+  },
+  {
+    "date": "2027-10-31",
+    "ship": "Costa Fascinosa",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "08:30",
+    "departure": "",
+    "callType": "Port of call",
+    "notes": "arrival only"
+  },
+  {
+    "date": "2027-12-10",
+    "ship": "Costa Pacifica",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "07:00",
+    "departure": "16:00",
+    "callType": "Port of call",
+    "timeInPort": "9h",
+    "notes": "port time not found in itinerary"
+  },
+  {
+    "date": "2027-12-13",
+    "ship": "Amera",
+    "cruiseLine": "Phoenix Reisen",
+    "arrival": "09:00",
+    "departure": "",
+    "callType": "Port of call",
+    "notes": "arrival only"
+  },
+  {
+    "date": "2027-12-22",
+    "ship": "Costa Pacifica",
+    "cruiseLine": "Costa Cruises",
+    "arrival": "07:00",
+    "departure": "16:00",
+    "callType": "Port of call",
+    "timeInPort": "9h",
+    "notes": "port time not found in itinerary"
   }
 ]

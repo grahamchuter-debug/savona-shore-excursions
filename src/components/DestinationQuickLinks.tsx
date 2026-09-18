@@ -39,7 +39,7 @@ const RIVIERA_LINKS = [
   },
 ];
 
-export function RivieraLinks() {
+export function DestinationQuickLinks() {
   return (
     <section className="section-padding bg-coastal-50 border-t border-coastal-100">
       <div className="container-wide">

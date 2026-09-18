@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   cruisePositioning,
   dayAshoreIntro,
@@ -70,6 +71,21 @@ function DayAshoreIcon({ type }: { type: DayAshoreItem["icon"] }) {
           <path d="M15.5 13v7" />
         </svg>
       );
+    case "family":
+      return (
+        <svg {...common}>
+          <circle cx="9" cy="7" r="2" />
+          <circle cx="16" cy="8" r="1.75" />
+          <path d="M4.5 19v-1.5a3.5 3.5 0 0 1 3.5-3.5h2A3.5 3.5 0 0 1 13.5 17.5V19" />
+          <path d="M14 19v-1.25a2.75 2.75 0 0 1 2.75-2.75h.5A2.75 2.75 0 0 1 20 17.75V19" />
+        </svg>
+      );
+    case "luxury":
+      return (
+        <svg {...common}>
+          <path d="M12 3.5l2.2 4.4 4.8.7-3.5 3.4.8 4.8L12 14.8 7.7 16.8l.8-4.8-3.5-3.4 4.8-.7L12 3.5z" />
+        </svg>
+      );
   }
 }
 
@@ -85,13 +101,10 @@ export function YourDayAshore() {
           <p className="section-subtitle">{dayAshoreIntro}</p>
         </div>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {dayAshoreItems.map((item) => (
-            <article
-              key={item.id}
-              className="rounded-2xl border border-coastal-100/90 bg-white/90 p-5 shadow-sm sm:p-6"
-            >
-              <div className="flex items-start gap-3">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {dayAshoreItems.map((item) => {
+            const inner = (
+              <div className="flex h-full items-start gap-3">
                 <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-coastal-50 text-coastal-700 ring-1 ring-coastal-100">
                   <DayAshoreIcon type={item.icon} />
                 </span>
@@ -100,8 +113,21 @@ export function YourDayAshore() {
                   <p className="mt-2 text-sm leading-relaxed text-gray-600">{item.body}</p>
                 </div>
               </div>
-            </article>
-          ))}
+            );
+
+            const className =
+              "rounded-2xl border border-coastal-100/90 bg-white/90 p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md sm:p-6";
+
+            return item.href ? (
+              <Link key={item.id} href={item.href} className={`${className} block`}>
+                {inner}
+              </Link>
+            ) : (
+              <article key={item.id} className={className}>
+                {inner}
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>

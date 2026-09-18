@@ -16,10 +16,10 @@ export {
 };
 
 export const legalNavLinks = [
-  { label: "Terms & Conditions", href: "/terms-and-conditions" },
-  { label: "Cancellation Policy", href: "/cancellation-policy" },
-  { label: "Privacy Policy", href: "/privacy-policy" },
-  { label: "Contact Us", href: "/contact" },
+  { label: "Terms & Conditions", href: "/terms" },
+  { label: "Cancellation Policy", href: "/booking-conditions" },
+  { label: "Privacy Policy", href: "/privacy" },
+  { label: "Contact Us", href: "/enquire" },
   { label: "Return to Ship Guarantee", href: "/return-to-ship-guarantee" },
 ] as const;
 

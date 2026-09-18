@@ -12,8 +12,10 @@ export type PaymentsEnv = {
   DB: D1Database;
   STRIPE_SECRET_KEY: string;
   STRIPE_WEBHOOK_SECRET: string;
-  /** Approved retail EUR price per guest (major units, e.g. "149"). Required. */
-  BOOKING_PRICE_PER_GUEST_EUR: string;
+  /** @deprecated Catalogue is authoritative; kept as single-product fallback */
+  BOOKING_PRICE_PER_GUEST_EUR?: string;
+  /** Optional multi-currency fallback major-unit price */
+  BOOKING_PRICE_PER_GUEST?: string;
   CHECKOUT_CURRENCY?: string;
   ORIGINATING_SITE?: string;
   ORIGINATING_PORT?: string;
@@ -33,6 +35,8 @@ export type PaymentsEnv = {
   EMAIL_FROM?: string;
   /** Display name for From header (brand-specific). */
   EMAIL_FROM_NAME?: string;
+  /** Booking reference prefix, e.g. SV → SV-XXXXXXXX */
+  BOOKING_REF_PREFIX?: string;
 };
 
 export type CreateCheckoutBody = {

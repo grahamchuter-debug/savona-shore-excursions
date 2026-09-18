@@ -15,8 +15,8 @@
     "prebuild": "node scripts/optimize-images.mjs",
     "qa:world2": "node ../World-2.0/scripts/world2-audit.js --site .",
     "qa:full": "npm run build && npm run check-links && npm run seo-qa && npm run qa:world2 -- --build",
+    "pages:deploy": "npm run build && wrangler deploy",
     "deploy": "npm run build && wrangler deploy",
-    "pages:deploy": "npm run build && wrangler pages deploy out --project-name=savona-shore-excursions",
     "payments:dev": "npm run dev --prefix workers/payments",
     "payments:types": "npm run types --prefix workers/payments"
   },

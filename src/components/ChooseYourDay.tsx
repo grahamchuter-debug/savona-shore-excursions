@@ -109,7 +109,7 @@ const CHOOSE_CARDS = [
   },
 ] as const;
 
-export function ChooseYourRiviera() {
+export function ChooseYourDay() {
   return (
     <section id="choose" className="section-padding bg-white">
       <div className="container-wide">

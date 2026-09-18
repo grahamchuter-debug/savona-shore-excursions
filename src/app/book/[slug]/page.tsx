@@ -23,7 +23,7 @@ export async function generateMetadata({
   if (!product) return {};
   return buildMetadata({
     title: `Book ${product.name}`,
-    description: `Book ${product.experienceName} from Savona. ${formatBookingMoney(product.priceEur)} per guest. Secure online booking with return-to-ship planning.`,
+    description: `Book ${product.experienceName} from Savona. ${formatBookingMoney(product.priceAmount)} per guest. Secure online booking with return-to-ship planning.`,
     path: product.bookingPath,
   });
 }

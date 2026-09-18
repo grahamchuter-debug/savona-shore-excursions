@@ -3,6 +3,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbSchema, webPageSchema } from "@/lib/schema";
 import { SITE } from "@/lib/site";
+import { businessIdentity } from "@/lib/legal/business-identity";
 
 const path = "/terms";
 
@@ -30,7 +31,12 @@ export default function TermsPage() {
             <p>{SITE.name} provides planning information and guidance for cruise passengers calling at Savona. It is offered in good faith for general guidance and does not constitute professional travel advice.</p>
             <p>Excursion operators, transfer times and ship schedules change. Always confirm all-aboard times and bookings with your cruise line and excursion provider before sailing. Prices on this site are shown in euros (EUR) where stated.</p>
             <p>We are not affiliated with any cruise line, the Port of Savona or excursion operators listed on this site unless explicitly stated.</p>
-            <p>Contact: <a href="mailto:hello@savonashoreexcursions.com" className="text-coastal-700 hover:underline">hello@savonashoreexcursions.com</a></p>
+            <p>
+              Contact:{" "}
+              <a href={businessIdentity.primaryEmailHref} className="text-coastal-700 hover:underline">
+                {businessIdentity.primaryEmail}
+              </a>
+            </p>
           </div>
         </div>
       </section>

@@ -4,6 +4,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbSchema, webPageSchema } from "@/lib/schema";
 import { SITE } from "@/lib/site";
+import { businessIdentity } from "@/lib/legal/business-identity";
 
 const path = "/about";
 
@@ -39,8 +40,8 @@ export default function AboutPage() {
             </p>
             <p>
               Questions? Email us at{" "}
-              <a href="mailto:hello@savonashoreexcursions.com" className="text-coastal-700 hover:underline">
-                hello@savonashoreexcursions.com
+              <a href={businessIdentity.primaryEmailHref} className="text-coastal-700 hover:underline">
+                {businessIdentity.primaryEmail}
               </a>
               .
             </p>

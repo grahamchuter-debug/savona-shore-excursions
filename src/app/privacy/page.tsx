@@ -3,6 +3,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbSchema, webPageSchema } from "@/lib/schema";
 import { SITE } from "@/lib/site";
+import { businessIdentity } from "@/lib/legal/business-identity";
 
 const path = "/privacy";
 
@@ -30,8 +31,8 @@ export default function PrivacyPage() {
             <p>{SITE.name} ({SITE.url}) is an independent Savona and Italian Riviera cruise planning resource. This policy explains what information we collect and how we use it.</p>
             <p>When you submit our enquiry form, we receive your name, email address and message content solely to respond to your request. We do not sell personal data to third parties.</p>
             <p>Like most websites, we may use standard analytics to understand how visitors use our guides. You can contact us at{" "}
-              <a href="mailto:privacy@savonashoreexcursions.com" className="text-coastal-700 hover:underline">
-                privacy@savonashoreexcursions.com
+              <a href={businessIdentity.privacyEmailHref} className="text-coastal-700 hover:underline">
+                {businessIdentity.privacyEmail}
               </a>{" "}
               with any privacy questions.
             </p>

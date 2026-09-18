@@ -5,12 +5,20 @@ import { PhotoHeroBand } from "@/components/PhotoHeroBand";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FAQSection } from "@/components/FAQSection";
 import { PlanningLinks } from "@/components/PlanningLinks";
+import { WhyWeChoseThisExcursion } from "@/components/WhyWeChoseThisExcursion";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbSchema, faqSchema, articleSchema } from "@/lib/schema";
 import { getExcursionBySlug, getAllExcursionSlugs, excursions } from "@/data/excursions";
 import { getExcursionImage } from "@/lib/images";
 import { ResponsiveImage } from "@/components/ResponsiveImage";
+import { formatMajorMoney, SITE_CURRENCY } from "@/lib/commerce/currency";
 
+function excursionPriceLabel(e: { priceAmount?: number; priceEur?: number; priceCurrency?: string }) {
+  const amount = e.priceAmount ?? e.priceEur;
+  if (amount == null) return null;
+  const currency = (e.priceCurrency as typeof SITE_CURRENCY | undefined) ?? SITE_CURRENCY;
+  return formatMajorMoney(amount, currency);
+}
 export function generateStaticParams() {
   return getAllExcursionSlugs().map((slug) => ({ slug }));
 }
@@ -54,7 +62,9 @@ export default async function ExcursionDetailPage({ params }: { params: Promise<
             <span className="pill">Duration: {e.duration}</span>
             <span className="pill">Pace: {e.pace}</span>
             {e.walkingLevel ? <span className="pill">Walking: {e.walkingLevel}</span> : null}
-            {e.priceEur != null ? <span className="pill">From €{e.priceEur} per guest</span> : null}
+            {excursionPriceLabel(e) ? (
+              <span className="pill">From {excursionPriceLabel(e)} per guest</span>
+            ) : null}
             <span className="pill">Best for: {e.bestFor}</span>
           </div>
 
@@ -130,10 +140,12 @@ export default async function ExcursionDetailPage({ params }: { params: Promise<
             </ul>
           </div>
 
+          {e.whyWeChose ? <WhyWeChoseThisExcursion content={e.whyWeChose} /> : null}
+
           <div className="mt-10 flex flex-wrap gap-3">
             {e.bookable && e.bookingPath ? (
               <Link href={e.bookingPath} className="btn-primary">
-                Book Now{e.priceEur != null ? ` — €${e.priceEur}` : ""}
+                Book Now{excursionPriceLabel(e) ? ` — ${excursionPriceLabel(e)}` : ""}
               </Link>
             ) : null}
             <Link href="/cruise-planner" className="btn-secondary">Build my cruise plan</Link>

@@ -3,7 +3,7 @@ import { PageHero } from "@/components/PageHero";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbSchema, webPageSchema } from "@/lib/schema";
-import { SavonaCruisePlanner } from "@/components/SavonaCruisePlanner";
+import { CruisePlanner } from "@/components/CruisePlanner";
 
 const path = "/cruise-planner";
 const description =
@@ -33,7 +33,7 @@ export default function CruisePlannerPage() {
       <section className="section-padding">
         <div className="container-wide max-w-3xl">
           <Breadcrumbs items={breadcrumbs} />
-          <SavonaCruisePlanner />
+          <CruisePlanner />
         </div>
       </section>
     </>

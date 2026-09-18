@@ -10,6 +10,7 @@ const CARD_EMOJI: Record<string, string> = {
   "scenic-drives": "📸",
   "walking-tours": "🚶",
   "small-groups": "👥",
+  "family-friendly": "👨‍👩‍👧",
   "luxury-experiences": "✨",
 };
 

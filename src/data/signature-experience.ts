@@ -70,9 +70,6 @@ export const signatureRivieraExperience = {
   ] satisfies FAQ[],
 };
 
-/** Back-compat alias during rename */
-export const signatureAndalusiaExperience = signatureRivieraExperience;
-
 export function getSignatureEditorialRecommendation() {
   return {
     category: "best-got" as const,

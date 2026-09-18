@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { destinationConfig } from "@/config/destination";
 import { SITE } from "./site";
 import { absoluteUrl } from "./paths";
 import {
@@ -43,11 +44,7 @@ export function buildMetadata({
     title: path === "/" ? { absolute: ogTitle } : title,
     description,
     keywords: [
-      "Savona shore excursions",
-      "Portofino from Savona",
-      "Savona cruise excursions",
-      "Italian Riviera shore excursions",
-      "Savona cruise port",
+      ...destinationConfig.seo.defaultKeywords,
       ...keywords,
     ],
     metadataBase: new URL(SITE.url),

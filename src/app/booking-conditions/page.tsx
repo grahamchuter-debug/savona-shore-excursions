@@ -3,6 +3,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbSchema, webPageSchema } from "@/lib/schema";
 import { SITE } from "@/lib/site";
+import { businessIdentity } from "@/lib/legal/business-identity";
 
 const path = "/booking-conditions";
 
@@ -42,15 +43,27 @@ export default function BookingConditionsPage() {
               responsibility.
             </p>
             <p>
-              Booking enquiries:{" "}
-              <a href="mailto:bookings@savonashoreexcursions.com" className="text-coastal-700 hover:underline">
-                bookings@savonashoreexcursions.com
-              </a>
-              . General questions:{" "}
-              <a href="mailto:hello@savonashoreexcursions.com" className="text-coastal-700 hover:underline">
-                hello@savonashoreexcursions.com
-              </a>
-              .
+              {businessIdentity.showDestinationEmails ? (
+                <>
+                  Booking enquiries:{" "}
+                  <a href={businessIdentity.customerServiceEmailHref} className="text-coastal-700 hover:underline">
+                    {businessIdentity.customerServiceEmail}
+                  </a>
+                  . General questions:{" "}
+                  <a href={businessIdentity.helloEmailHref} className="text-coastal-700 hover:underline">
+                    {businessIdentity.helloEmail}
+                  </a>
+                  .
+                </>
+              ) : (
+                <>
+                  Contact:{" "}
+                  <a href={businessIdentity.primaryEmailHref} className="text-coastal-700 hover:underline">
+                    {businessIdentity.primaryEmail}
+                  </a>
+                  .
+                </>
+              )}
             </p>
           </div>
         </div>

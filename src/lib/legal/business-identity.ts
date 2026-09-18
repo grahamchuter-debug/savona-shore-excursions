@@ -1,38 +1,38 @@
 /**
- * Single source of truth for confirmed business/legal identity.
- * Savona Shore Excursions is the customer-facing brand.
+ * Business/legal identity — derived from destination config + contact mode.
  */
+
+import { destinationConfig } from "@/config/destination";
+import { publicContact } from "@/lib/contact";
+
+const { legal, name } = destinationConfig;
+
 export const businessIdentity = {
-  tradingName: "Savona Shore Excursions",
-  legalCompanyName: "Wow A Tour Ltd",
-  legalEntityStatement:
-    "Savona Shore Excursions is a trading name of Wow A Tour Ltd.",
-  companyNumber: "11426960",
-  registeredJurisdiction: "England and Wales",
+  tradingName: legal.tradingName,
+  legalCompanyName: legal.legalCompanyName,
+  legalEntityStatement: `${legal.tradingName} is a trading name of ${legal.legalCompanyName}.`,
+  companyNumber: legal.companyNumber,
+  registeredJurisdiction: legal.registeredJurisdiction,
   registeredOffice: {
-    lines: [
-      "Kintyre House",
-      "70 High Street",
-      "Fareham",
-      "Hampshire",
-      "United Kingdom",
-      "PO16 7BB",
-    ],
-    formatted:
-      "Kintyre House, 70 High Street, Fareham, Hampshire, United Kingdom, PO16 7BB",
-    multiline:
-      "Kintyre House\n70 High Street\nFareham\nHampshire\nUnited Kingdom\nPO16 7BB",
+    lines: [...legal.registeredOfficeLines],
+    formatted: legal.registeredOfficeFormatted,
+    multiline: legal.registeredOfficeLines.join("\n"),
   },
-  customerServiceEmail: "bookings@savonashoreexcursions.com",
-  customerServiceEmailHref: "mailto:bookings@savonashoreexcursions.com",
-  helloEmail: "hello@savonashoreexcursions.com",
-  privacyEmail: "privacy@savonashoreexcursions.com",
-  agentStatus:
-    "Savona Shore Excursions acts as booking agent for the local excursion provider.",
-  companyDisclosure:
-    "Savona Shore Excursions is a trading name of Wow A Tour Ltd, registered in England and Wales under company number 11426960. Registered office: Kintyre House, 70 High Street, Fareham, Hampshire, United Kingdom, PO16 7BB.",
+  contactMode: publicContact.mode,
+  showDestinationEmails: publicContact.showDestinationEmails,
+  customerServiceEmail: publicContact.bookings,
+  customerServiceEmailHref: `mailto:${publicContact.bookings}`,
+  helloEmail: publicContact.hello,
+  helloEmailHref: `mailto:${publicContact.hello}`,
+  privacyEmail: publicContact.privacy,
+  privacyEmailHref: `mailto:${publicContact.privacy}`,
+  /** Single public address for footers / enquire when central, else hello. */
+  primaryEmail: publicContact.primary,
+  primaryEmailHref: `mailto:${publicContact.primary}`,
+  agentStatus: `${name} acts as booking agent for the local excursion provider.`,
+  companyDisclosure: `${legal.tradingName} is a trading name of ${legal.legalCompanyName}, registered in ${legal.registeredJurisdiction} under company number ${legal.companyNumber}.`,
   bookingAgentRoleParagraphs: [
-    "Wow A Tour Ltd, trading as Savona Shore Excursions, acts as a booking agent on behalf of independent local excursion providers.",
+    `${legal.legalCompanyName}, trading as ${legal.tradingName}, acts as a booking agent on behalf of independent local excursion providers.`,
     "When you make a booking, we arrange the reservation and collect payment on behalf of the provider identified in your booking confirmation. The excursion itself is supplied and operated by that independent provider.",
     "We remain responsible for providing our booking services with reasonable care and skill. The local provider is responsible for operating the excursion in accordance with the booking description and applicable law.",
   ],

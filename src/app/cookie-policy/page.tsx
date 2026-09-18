@@ -3,6 +3,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbSchema, webPageSchema } from "@/lib/schema";
 import { SITE } from "@/lib/site";
+import { businessIdentity } from "@/lib/legal/business-identity";
 
 const path = "/cookie-policy";
 
@@ -38,8 +39,8 @@ export default function CookiePolicyPage() {
             </p>
             <p>
               For privacy questions contact{" "}
-              <a href="mailto:privacy@savonashoreexcursions.com" className="text-coastal-700 hover:underline">
-                privacy@savonashoreexcursions.com
+              <a href={businessIdentity.privacyEmailHref} className="text-coastal-700 hover:underline">
+                {businessIdentity.privacyEmail}
               </a>
               .
             </p>

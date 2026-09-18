@@ -1,5 +1,6 @@
 /**
- * Central cruise-positioning copy for homepage readiness.
+ * Central cruise-positioning + Your Day Ashore experience categories.
+ * Reusable World 2.0 pattern — destination copy lives here; component stays generic.
  */
 export const cruisePositioning = {
   enabled: true,
@@ -21,47 +22,61 @@ export interface DayAshoreItem {
   id: string;
   title: string;
   body: string;
-  icon: "clock" | "route" | "walk" | "sunrise" | "viewpoint" | "food";
+  href?: string;
+  icon: "clock" | "route" | "walk" | "sunrise" | "viewpoint" | "food" | "family" | "luxury";
 }
 
 export const dayAshoreIntro =
-  "Choose the kind of Riviera day that fits your hours ashore — then build everything around your ship’s schedule.";
+  "Where will your perfect day on the Italian Riviera take you? Choose the experience that fits your hours ashore — then build everything around your ship’s schedule.";
 
 export const dayAshoreItems: DayAshoreItem[] = [
   {
     id: "historic-cities",
     title: "Historic Cities",
-    body: "Genoa’s harbour, palazzi and old-town lanes — the maritime capital of Liguria in one carefully timed day.",
+    body: "Genoa’s harbour, palazzi and old-town lanes — Liguria’s maritime capital in one carefully timed day.",
+    href: "/shore-excursions/genoa-highlights",
     icon: "route",
   },
   {
     id: "coastal-villages",
     title: "Coastal Villages",
     body: "Portofino, Santa Margherita and colourful Ligurian harbours made for unhurried wandering.",
+    href: "/shore-excursions/portofino-santa-margherita",
     icon: "viewpoint",
   },
   {
-    id: "food-wine",
-    title: "Food & Wine",
-    body: "Focaccia, pesto, olive oil and seaside tables — taste Liguria without losing your ship buffer.",
+    id: "food",
+    title: "Food",
+    body: "Focaccia, pesto and seaside tables — taste Liguria without losing your ship buffer.",
+    href: "/shore-excursions/savona-walking-tour",
     icon: "food",
   },
   {
     id: "scenic-drives",
     title: "Scenic Drives",
-    body: "Cliff roads and Mediterranean viewpoints that turn the transfer itself into part of the experience.",
+    body: "Cliff roads and Mediterranean viewpoints that turn the transfer into part of the day.",
+    href: "/shore-excursions/italian-riviera-discovery",
     icon: "sunrise",
-  },
-  {
-    id: "walking-tours",
-    title: "Walking Tours",
-    body: "Stay close to port and explore Savona Old Town and Priamar at an easy pace.",
-    icon: "walk",
   },
   {
     id: "small-groups",
     title: "Small Groups",
-    body: "Intimate vehicles, clearer commentary and a calmer day than large coach tours.",
+    body: "Intimate vehicles, clearer pacing and a calmer day than large coach tours.",
+    href: "/shore-excursions/ligurian-coast-experience",
     icon: "clock",
+  },
+  {
+    id: "family-friendly",
+    title: "Family Friendly",
+    body: "Shorter walks, flexible stops and days that still feel special with children aboard.",
+    href: "/shore-excursions/savona-walking-tour",
+    icon: "family",
+  },
+  {
+    id: "luxury",
+    title: "Luxury",
+    body: "Private pacing, premium routing and Riviera days shaped around your party alone.",
+    href: "/signature-riviera-experience",
+    icon: "luxury",
   },
 ];

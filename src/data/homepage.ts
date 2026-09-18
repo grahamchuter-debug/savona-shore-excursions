@@ -1,7 +1,7 @@
 import type { ExperienceCard, FAQ, VisitorType } from "./types";
 import { SIGNATURE_EXPERIENCE_PATH } from "./signature-experience";
 
-export const homepageTagline = "Discover the Italian Riviera from Savona";
+export const homepageTagline = "Where will your perfect day on the Italian Riviera take you?";
 
 export const visitorTypes: VisitorType[] = [
   {
@@ -100,7 +100,7 @@ export const experienceCards: ExperienceCard[] = [
   },
   {
     slug: "food-wine",
-    title: "Food & Wine",
+    title: "Food",
     description: "Focaccia, pesto, olive oil and the flavours that define the Ligurian table.",
     href: "/shore-excursions/savona-walking-tour",
     cta: "Taste Liguria",
@@ -131,8 +131,16 @@ export const experienceCards: ExperienceCard[] = [
     imageKey: "private",
   },
   {
+    slug: "family-friendly",
+    title: "Family Friendly",
+    description: "Shorter walks and flexible days that still feel special with children aboard.",
+    href: "/shore-excursions/savona-walking-tour",
+    cta: "Plan a family day",
+    imageKey: "family",
+  },
+  {
     slug: "luxury-experiences",
-    title: "Luxury Experiences",
+    title: "Luxury",
     description: "Private pacing, premium routing and Riviera days shaped around your party.",
     href: SIGNATURE_EXPERIENCE_PATH,
     cta: "View signature days",

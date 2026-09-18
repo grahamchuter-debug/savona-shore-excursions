@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { buildMetadata } from "@/lib/seo";
-import { ChooseYourRiviera } from "@/components/ChooseYourRiviera";
-import { SpiritOfLiguria } from "@/components/SpiritOfLiguria";
+import { ChooseYourDay } from "@/components/ChooseYourDay";
+import { SpiritOfPlace } from "@/components/SpiritOfPlace";
 import { WowCollectionFeature } from "@/components/WowCollectionFeature";
-import { SignatureRivieraFeature } from "@/components/SignatureRivieraFeature";
+import { SignatureExperienceFeature } from "@/components/SignatureExperienceFeature";
 import { EditorsCollection } from "@/components/EditorsCollection";
 import { HonestAdvice } from "@/components/HonestAdvice";
 import { FAQSection } from "@/components/FAQSection";
@@ -14,9 +14,10 @@ import { getFeaturedExcursions } from "@/data/excursions";
 import { siteImages, getExcursionImage } from "@/lib/images";
 import { ResponsiveImage } from "@/components/ResponsiveImage";
 import { PreloadImage } from "@/components/PreloadImage";
-import { RivieraLinks } from "@/components/RivieraLinks";
+import { DestinationQuickLinks } from "@/components/DestinationQuickLinks";
 import { CruiseHeroTrust } from "@/components/CruiseHeroTrust";
 import { YourDayAshore } from "@/components/YourDayAshore";
+import { formatMajorMoney, SITE_CURRENCY } from "@/lib/commerce/currency";
 import { SITE } from "@/lib/site";
 
 export const metadata = buildMetadata({
@@ -69,7 +70,7 @@ export default function HomePage() {
         <div className="hero-overlay" aria-hidden="true" />
         <div className="container-wide relative z-10 px-4 sm:px-6 lg:px-8">
           <p className="section-eyebrow mb-2 text-coastal-100 animate-fade-up">
-            {SITE.tagline}
+            Your gateway to Portofino, Genoa and the Ligurian Coast
           </p>
           <h1 className="home-hero-heading animate-fade-up-delay">{homepageTagline}</h1>
           <CruiseHeroTrust />
@@ -92,10 +93,10 @@ export default function HomePage() {
       </section>
 
       <YourDayAshore />
-      <ChooseYourRiviera />
-      <SpiritOfLiguria />
+      <ChooseYourDay />
+      <SpiritOfPlace />
       <WowCollectionFeature />
-      <SignatureRivieraFeature />
+      <SignatureExperienceFeature />
       <EditorsCollection />
       <HonestAdvice />
 
@@ -127,7 +128,9 @@ export default function HomePage() {
                   <div className="p-5">
                     <p className="text-xs font-medium uppercase tracking-wide text-coastal-200">
                       {excursion.category}
-                      {excursion.priceEur != null ? ` · €${excursion.priceEur}` : ""}
+                      {(excursion.priceAmount ?? excursion.priceEur) != null
+                        ? ` · ${formatMajorMoney(excursion.priceAmount ?? excursion.priceEur!, excursion.priceCurrency ?? SITE_CURRENCY)}`
+                        : ""}
                     </p>
                     <h3 className="mt-2 font-display text-xl font-semibold text-white">
                       {excursion.title}
@@ -171,7 +174,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <RivieraLinks />
+      <DestinationQuickLinks />
       <FAQSection faqs={faqs} title="Savona shore excursion FAQs" />
     </>
   );

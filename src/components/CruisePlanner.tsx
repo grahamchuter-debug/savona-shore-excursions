@@ -27,7 +27,7 @@ function Section({ title, links }: { title: string; links: PlannerResult["excurs
   );
 }
 
-export function SavonaCruisePlanner() {
+export function CruisePlanner() {
   const [arrivalTime, setArrivalTime] = useState("07:30");
   const [departureTime, setDepartureTime] = useState("17:00");
   const [adults, setAdults] = useState("2");

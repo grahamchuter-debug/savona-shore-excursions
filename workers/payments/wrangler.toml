@@ -12,6 +12,7 @@ migrations_dir = "migrations"
 
 [vars]
 CHECKOUT_CURRENCY = "eur"
+BOOKING_REF_PREFIX = "SV"
 # Fallback only — authoritative prices live in catalogue.ts per product
 BOOKING_PRICE_PER_GUEST_EUR = "149"
 ORIGINATING_SITE = "savonashoreexcursions.com"
@@ -20,7 +21,7 @@ ORIGINATING_PORT = "Savona"
 SITE_BASE_URL = "http://localhost:3000"
 SITE_ORIGIN = "http://localhost:3000"
 CORS_ALLOWED_ORIGINS = "http://localhost:3000,http://127.0.0.1:3000,https://savonashoreexcursions.com,https://www.savonashoreexcursions.com"
-INTERNAL_BOOKING_EMAIL = "bookings@savonashoreexcursions.com"
+INTERNAL_BOOKING_EMAIL = "info@wowatour.com"
 EMAIL_FROM = "bookings@notifications.wowatour.com"
 EMAIL_FROM_NAME = "Savona Shore Excursions"
 

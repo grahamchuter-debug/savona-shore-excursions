@@ -239,7 +239,3 @@ export function generateSavonaPlan(input: PlannerInput): PlannerResult {
   };
 }
 
-/** @deprecated use generateSavonaPlan */
-export const MALAGA_DAY_PLANS = SAVONA_DAY_PLANS;
-/** @deprecated use generateSavonaPlan */
-export const generateMalagaPlan = generateSavonaPlan;

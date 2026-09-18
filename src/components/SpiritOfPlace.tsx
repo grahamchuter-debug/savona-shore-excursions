@@ -1,7 +1,7 @@
 import { subjectImages } from "@/lib/images";
 import { ResponsiveImage } from "@/components/ResponsiveImage";
 
-export function SpiritOfLiguria() {
+export function SpiritOfPlace() {
   const image = subjectImages["ligurian-coast"];
 
   return (

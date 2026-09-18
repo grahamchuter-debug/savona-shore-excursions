@@ -1,13 +1,15 @@
 /**
  * Compact booking reference + Checkout idempotency material.
+ * Prefix comes from Worker env BOOKING_REF_PREFIX (e.g. SV, VF, LP).
  */
 
-export function createBookingReference(): string {
+export function createBookingReference(prefix = "XX"): string {
   const bytes = crypto.getRandomValues(new Uint8Array(5));
   const stamp = Array.from(bytes, (b) => b.toString(36).toUpperCase())
     .join("")
     .slice(0, 8);
-  return `SV-${stamp}`;
+  const clean = prefix.replace(/[^A-Z0-9]/gi, "").toUpperCase().slice(0, 4) || "XX";
+  return `${clean}-${stamp}`;
 }
 
 /** Deterministic key for Stripe Checkout Session create idempotency. */

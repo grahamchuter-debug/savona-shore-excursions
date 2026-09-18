@@ -1,3 +1,4 @@
+import { destinationConfig } from "@/config/destination";
 import { businessIdentity } from "@/lib/legal/business-identity";
 import { SITE } from "@/lib/site";
 
@@ -8,6 +9,6 @@ export const siteConfig = {
   defaultDescription: SITE.description,
   copyrightEntity: businessIdentity.tradingName,
   excursionsHubPath: "/shore-excursions",
-  excursionsHubLabel: "Savona shore excursions",
+  excursionsHubLabel: `${destinationConfig.destination} shore excursions`,
   bookingEmail: businessIdentity.customerServiceEmail,
 } as const;

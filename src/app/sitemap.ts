@@ -29,6 +29,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/compare",
     "/cookie-policy",
     "/booking-conditions",
+    "/cancellation-policy",
+    "/return-to-ship-guarantee",
   ];
 
   const dynamicPages = [

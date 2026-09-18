@@ -3,16 +3,10 @@
 import Link from "next/link";
 import { useState } from "react";
 import { DestinationLogo } from "@/components/DestinationLogo";
+import { destinationConfig } from "@/config/destination";
 import { destinationIdentity } from "@/data/destination-identity";
 
-const navItems = [
-  { href: "/compare", label: "Compare" },
-  { href: "/shore-excursions", label: "Excursions" },
-  { href: "/guides", label: "Guides" },
-  { href: "/wow-collection", label: "Wow Collection" },
-  { href: "/cruise-planner", label: "Planner" },
-  { href: "/cruise-port-guide", label: "Port Guide" },
-];
+const navItems = destinationConfig.nav;
 
 export function Header() {
   const [open, setOpen] = useState(false);

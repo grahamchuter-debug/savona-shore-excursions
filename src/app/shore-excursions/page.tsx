@@ -7,7 +7,7 @@ import { breadcrumbSchema, webPageSchema } from "@/lib/schema";
 import { excursions } from "@/data/excursions";
 import { getExcursionImage, excursionsHubImage } from "@/lib/images";
 import { ResponsiveImage } from "@/components/ResponsiveImage";
-import { SignatureRivieraFeature } from "@/components/SignatureRivieraFeature";
+import { SignatureExperienceFeature } from "@/components/SignatureExperienceFeature";
 
 export const metadata = buildMetadata({
   title: "Savona Shore Excursions — Italian Riviera from Your Cruise Ship",
@@ -63,7 +63,7 @@ export default function ShoreExcursionsPage() {
             .
           </p>
           <div className="mt-8">
-            <SignatureRivieraFeature embedded />
+            <SignatureExperienceFeature embedded />
           </div>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {excursions.map((e) => {

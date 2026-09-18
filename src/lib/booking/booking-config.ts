@@ -79,7 +79,7 @@ export function buildBookingTourView(product: BookableProduct): BookingTourView 
     checkoutReconnectImageAlt: product.checkoutReconnectImageAlt,
     ctaLabel: product.ctaLabel,
     durationLabel: product.durationLabel,
-    pricePerGuest: product.priceEur,
+    pricePerGuest: product.priceAmount,
     checkoutReconnectLine: product.checkoutReconnectLine,
   };
 }
@@ -130,9 +130,11 @@ export const bookingCheckoutGuestLimit =
   bookingCapacityConfig.guestsPerVehicle *
   bookingCapacityConfig.maxVehiclesSelectableAtCheckout;
 
+import { SITE_CURRENCY, CURRENCY_SYMBOL } from "@/lib/commerce/currency";
+
 export const bookingPricingConfig = {
-  currencyCode: "EUR",
-  currencySymbol: "€",
+  currencyCode: SITE_CURRENCY,
+  currencySymbol: CURRENCY_SYMBOL[SITE_CURRENCY],
   /** Fallback only — live tours use BookingTourView.pricePerGuest */
   pricePerGuest: bookingPrototypeTour.pricePerGuest,
   priceConfigured: true,
@@ -207,9 +209,7 @@ export const bookingCheckoutCopy = {
 export const bookingCheckoutLinks = [
   { label: "Terms & Conditions", href: "/terms" },
   { label: "Cancellation Policy", href: "/booking-conditions" },
-  { label: "Privacy Policy", href: "/privacy" },
-  { label: "Cookie Policy", href: "/cookie-policy" },
-  { label: "Return to Ship Guarantee", href: "/faq" },
+  { label: "Return to Ship Guarantee", href: "/return-to-ship-guarantee" },
   { label: "Contact Us", href: "/enquire" },
 ] as const;
 

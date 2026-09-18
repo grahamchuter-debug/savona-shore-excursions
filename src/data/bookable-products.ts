@@ -1,8 +1,13 @@
 /**
  * Bookable shore excursions — customer display + Worker catalogue alignment.
- * Prices aligned to Shore Excursions Group Savona customer-facing USD rates
- * converted to EUR for local display (€105 / €136 / €138 / €149 / €154).
+ *
+ * Prices are Shore Excursions Group customer-facing major-unit amounts for this
+ * European market, displayed in EUR with no FX conversion.
+ * (€115 / €142 / €148 / €150 / €168)
  */
+
+import type { DestinationCurrencyCode } from "@/lib/commerce/currency";
+import { SITE_CURRENCY } from "@/lib/commerce/currency";
 
 export type BookableProduct = {
   id: string;
@@ -13,7 +18,10 @@ export type BookableProduct = {
   experienceTitleLines: readonly string[];
   experienceSubheading: string;
   durationLabel: string;
+  /** @deprecated Prefer priceAmount */
   priceEur: number;
+  priceAmount: number;
+  priceCurrency: DestinationCurrencyCode;
   path: string;
   bookingPath: string;
   successPath: string;
@@ -39,8 +47,20 @@ function hero(
   return { id, ...dims, priority };
 }
 
+function product(
+  partial: Omit<BookableProduct, "priceAmount" | "priceCurrency" | "priceEur"> & {
+    priceAmount: number;
+  },
+): BookableProduct {
+  return {
+    ...partial,
+    priceEur: partial.priceAmount,
+    priceCurrency: SITE_CURRENCY,
+  };
+}
+
 export const BOOKABLE_PRODUCTS: readonly BookableProduct[] = [
-  {
+  product({
     id: "genoa-highlights",
     slug: "genoa-highlights",
     name: "Genoa Highlights",
@@ -50,7 +70,7 @@ export const BOOKABLE_PRODUCTS: readonly BookableProduct[] = [
     experienceSubheading:
       "Palazzi, harbour light and the historic lanes of Italy’s great maritime city.",
     durationLabel: "Approximately 8 hours",
-    priceEur: 136,
+    priceAmount: 148,
     path: "/shore-excursions/genoa-highlights",
     bookingPath: "/book/genoa-highlights",
     successPath: "/book/genoa-highlights/success",
@@ -67,8 +87,8 @@ export const BOOKABLE_PRODUCTS: readonly BookableProduct[] = [
     checkoutReconnectImageId: "camogli-waterfront",
     checkoutReconnectImageAlt:
       "Colourful Ligurian harbour facades along the Italian Riviera coast",
-  },
-  {
+  }),
+  product({
     id: "portofino-santa-margherita",
     slug: "portofino-santa-margherita",
     name: "Portofino & Santa Margherita",
@@ -78,7 +98,7 @@ export const BOOKABLE_PRODUCTS: readonly BookableProduct[] = [
     experienceSubheading:
       "Two of the Riviera’s most photographed harbours in one carefully timed cruise day.",
     durationLabel: "Approximately 8 hours",
-    priceEur: 154,
+    priceAmount: 168,
     path: "/shore-excursions/portofino-santa-margherita",
     bookingPath: "/book/portofino-santa-margherita",
     successPath: "/book/portofino-santa-margherita/success",
@@ -95,8 +115,8 @@ export const BOOKABLE_PRODUCTS: readonly BookableProduct[] = [
     checkoutReconnectImageId: "portofino-bay",
     checkoutReconnectImageAlt:
       "Italian Riviera coastline towards Portofino on a clear Mediterranean day",
-  },
-  {
+  }),
+  product({
     id: "italian-riviera-discovery",
     slug: "italian-riviera-discovery",
     name: "Italian Riviera Discovery",
@@ -106,7 +126,7 @@ export const BOOKABLE_PRODUCTS: readonly BookableProduct[] = [
     experienceSubheading:
       "A broader Ligurian day — coastal villages, scenic drives and time to savour the Riviera.",
     durationLabel: "Approximately 8–9 hours",
-    priceEur: 149,
+    priceAmount: 150,
     path: "/shore-excursions/italian-riviera-discovery",
     bookingPath: "/book/italian-riviera-discovery",
     successPath: "/book/italian-riviera-discovery/success",
@@ -123,8 +143,8 @@ export const BOOKABLE_PRODUCTS: readonly BookableProduct[] = [
     checkoutReconnectImageId: "santa-margherita",
     checkoutReconnectImageAlt:
       "Santa Margherita Ligure waterfront on the Italian Riviera",
-  },
-  {
+  }),
+  product({
     id: "savona-walking-tour",
     slug: "savona-walking-tour",
     name: "Savona Walking Tour",
@@ -134,7 +154,7 @@ export const BOOKABLE_PRODUCTS: readonly BookableProduct[] = [
     experienceSubheading:
       "Priamar, the old town and local flavour — the perfect shorter day ashore.",
     durationLabel: "Approximately 3 hours",
-    priceEur: 105,
+    priceAmount: 115,
     path: "/shore-excursions/savona-walking-tour",
     bookingPath: "/book/savona-walking-tour",
     successPath: "/book/savona-walking-tour/success",
@@ -148,8 +168,8 @@ export const BOOKABLE_PRODUCTS: readonly BookableProduct[] = [
     ],
     checkoutReconnectImageId: "savona-coast",
     checkoutReconnectImageAlt: "Mediterranean waterfront near Savona cruise port",
-  },
-  {
+  }),
+  product({
     id: "ligurian-coast-experience",
     slug: "ligurian-coast-experience",
     name: "Ligurian Coast Experience",
@@ -159,7 +179,7 @@ export const BOOKABLE_PRODUCTS: readonly BookableProduct[] = [
     experienceSubheading:
       "Scenic coastal roads, colourful fishing villages and the calm pace of Liguria.",
     durationLabel: "Approximately 7–8 hours",
-    priceEur: 138,
+    priceAmount: 142,
     path: "/shore-excursions/ligurian-coast-experience",
     bookingPath: "/book/ligurian-coast-experience",
     successPath: "/book/ligurian-coast-experience/success",
@@ -174,7 +194,7 @@ export const BOOKABLE_PRODUCTS: readonly BookableProduct[] = [
     ],
     checkoutReconnectImageId: "camogli-waterfront",
     checkoutReconnectImageAlt: "Camogli waterfront on the Ligurian coast",
-  },
+  }),
 ] as const;
 
 export function getBookableProduct(slugOrId: string): BookableProduct | undefined {

@@ -4,7 +4,7 @@ import { signatureRivieraExperience, SIGNATURE_EXPERIENCE_PATH } from "@/data/si
 import { subjectImages } from "@/lib/images";
 import { ResponsiveImage } from "@/components/ResponsiveImage";
 
-export function SignatureRivieraFeature({ embedded = false }: { embedded?: boolean }) {
+export function SignatureExperienceFeature({ embedded = false }: { embedded?: boolean }) {
   const image = subjectImages["ligurian-coast"];
   const comingSoon = signatureRivieraExperience.comingSoon;
 

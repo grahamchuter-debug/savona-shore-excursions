@@ -12,9 +12,8 @@ import {
   updateBookingStripeIds,
 } from "../db";
 import {
-  calculateAmountCents,
-  getCurrency,
-  getPricePerGuestEur,
+  getPricePerGuest,
+  getCurrencyForExcursion,
   MAX_GUESTS,
   MIN_GUESTS,
 } from "../pricing";
@@ -103,9 +102,9 @@ export async function handleCreateCheckoutSession(
   }
   const { ship } = shipResult;
 
-  let pricePerGuestEur: number;
+  let pricePerGuest: number;
   try {
-    pricePerGuestEur = getPricePerGuestEur(env, product.id);
+    pricePerGuest = getPricePerGuest(env, product.id);
   } catch (err) {
     console.error("pricing_config_error", String(err));
     return jsonResponse(
@@ -163,9 +162,9 @@ export async function handleCreateCheckoutSession(
 
   const { unitAmountCents, amountTotalCents } = calculateAmountCents(
     totalGuests,
-    pricePerGuestEur,
+    pricePerGuest,
   );
-  const currency = getCurrency(env);
+  const currency = getCurrencyForExcursion(env, product.id);
 
   if (
     typeof body.clientDisplayedTotalEur === "number" &&
@@ -258,11 +257,11 @@ export async function handleCreateCheckoutSession(
     }
   }
 
-  const bookingReference = createBookingReference();
+  const bookingReference = createBookingReference(env.BOOKING_REF_PREFIX ?? "XX");
   const bookingId = crypto.randomUUID();
   const now = new Date().toISOString();
-  const originatingSite = env.ORIGINATING_SITE ?? "villefrancheshoreexcursions.com";
-  const originatingPort = env.ORIGINATING_PORT ?? "Villefranche";
+  const originatingSite = env.ORIGINATING_SITE ?? "example.com";
+  const originatingPort = env.ORIGINATING_PORT ?? "Port";
 
   const metadata: Record<string, string> = {
     booking_ref: bookingReference,
