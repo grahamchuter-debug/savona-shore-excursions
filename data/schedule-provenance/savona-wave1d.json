@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-09-18T07:43:29.266Z",
+  "wave": "wave-1d",
+  "port": "savona",
+  "destSlug": "savona",
+  "displayName": "Savona",
+  "counts": {
+    "2026": 32,
+    "2027": 71,
+    "2028_discovery": 11,
+    "2028_published": 0,
+    "public_total": 103,
+    "h1_2026": 0
+  },
+  "partial2026": true,
+  "filter2028": {
+    "decision": "HOLD",
+    "reason": "validated 2 < MIN_PUBLISH_ROWS 15 — HOLD; restricted rows NOT reintroduced",
+    "validatedCount": 2,
+    "tier2PrincessKeys": 0
+  },
+  "timeCompleteness": {
+    "2026": {
+      "total": 32,
+      "arrival": 30,
+      "departure": 29,
+      "both": 29,
+      "neither": 2,
+      "pctBoth": 90.6
+    },
+    "2027": {
+      "total": 71,
+      "arrival": 71,
+      "departure": 68,
+      "both": 68,
+      "neither": 0,
+      "pctBoth": 95.8
+    },
+    "2028": {
+      "total": 0,
+      "arrival": 0,
+      "departure": 0,
+      "both": 0,
+      "neither": 0,
+      "pctBoth": 0
+    }
+  },
+  "contaminationPurged": [],
+  "wireSchedulesTs": null
+}
